@@ -6,3 +6,11 @@ body{
      font-size: large;
      color:black;
 }
+a{
+    padding-left: 30px;
+    text-align: center;
+    margin:auto;
+    background-color:;
+    color:blue;
+        
+}

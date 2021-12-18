@@ -22,3 +22,15 @@ input{
     text-align: center;
     border-radius: 2px;
 }
+nav{
+    padding:30px;
+
+}
+a{
+    padding-left: 30px;
+    text-align: center;
+    margin:auto;
+    background-color:;
+    color:blue;
+        
+}
