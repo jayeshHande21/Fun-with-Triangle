@@ -16,7 +16,7 @@ function CalculateAnswer(){
       }
       index = index + 1;
     }
-    output.innerText = "Your Final Score is " + score ;
+    output.innerText = "Your Final Score Is   " + score ;
     
 }
 
