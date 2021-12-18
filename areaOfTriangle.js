@@ -13,7 +13,7 @@ function heightBase(a,b){
 function areaOfTriangle(){
     const sum = heightBase(Number(base.value) , Number(height.value));
     const area = 1/2 * sum ;
-    output.innerText = "Sum Of The Area Is " + area ;
+    output.innerText = "Area Of Triangle Is " + area ;
 }
 
 button.addEventListener("click", areaOfTriangle)
