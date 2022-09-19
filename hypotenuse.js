@@ -12,7 +12,7 @@ function calculateSumOfSquare(a,b){
 function calculateHypo(){
     const sumOfSquare = calculateSumOfSquare(Number(sideInput[0].value),Number(sideInput[1].value))
     const squareRoot = Math.sqrt(sumOfSquare)
-    output.innerText = "The length of the hypotenuse is " + squareRoot;
+    output.innerText = "The length of the hypotenuse is " + squareRoot.toFixed(2);
 
 }
 
