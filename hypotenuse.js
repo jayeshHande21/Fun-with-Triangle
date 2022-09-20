@@ -1,21 +1,21 @@
-const sideInput = document.querySelectorAll(".side-input");
+const sideInput1 = document.querySelector("#side-input1");
+const sideInput2 = document.querySelector("#side-input2");
 const button = document.querySelector("#button");
 const output = document.querySelector("#output");
 
-
-function calculateSumOfSquare(a,b){
-    sumSquare = a*a + b*b;
-   //  console.log(sumSquare)
-   return sumSquare;
-   }
-
-function calculateHypo(){
-    const sumOfSquare = calculateSumOfSquare(Number(sideInput[0].value),Number(sideInput[1].value))
-    const squareRoot = Math.sqrt(sumOfSquare)
-    output.innerText = "The length of the hypotenuse is " + squareRoot.toFixed(2);
-
+function calculateHypotenuse(a, b) {
+  var hypotenuse = Math.sqrt(a ** 2 + b ** 2);
+  output.innerText = "The length of hypotenuse is " + hypotenuse.toFixed(2);
 }
 
-
+function calculateHypo() {
+  console.log(sideInput1.value);
+  if (sideInput1.value === "" || sideInput2.value === "") {
+    output.innerText = "Please enter both values";
+  } else if (Number(sideInput1.value <= 0) || Number(sideInput2.value <= 0)) {
+    output.innerText = "Both values should be greater than zero";
+  } else
+    calculateHypotenuse(Number(sideInput1.value), Number(sideInput2.value));
+}
 
 button.addEventListener("click", calculateHypo);
