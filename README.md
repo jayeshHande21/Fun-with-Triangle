@@ -7,6 +7,7 @@
 - Calculates Area by taking base and height as input.
 - You can explore it and play with it.
 - This project is made for Fun
+- Project Link : https://fun-triangle-vanila.netlify.app/
 
 ## Languages Used:
 - HTML5
