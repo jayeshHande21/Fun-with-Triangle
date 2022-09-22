@@ -21,7 +21,9 @@ function calculateSum() {
   const sumOfAngles =
     Number(angle1.value) + Number(angle2.value) + Number(angle3.value);
   if (sumOfAngles === 180) output.innerText = "Yayy!! Angles form the triangle";
-  else output.innerText = "Angles don't form the triangle";
+  else
+    output.innerText =
+      "Angles don't form the triangle , sum of angles must be equal to 180";
 }
 
 button.addEventListener("click", isTriangle);
